@@ -15,6 +15,7 @@
 		461CFA9B25FA64E300CCC210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461CFA9925FA64E300CCC210 /* LaunchScreen.storyboard */; };
 		461CFAA625FA64E300CCC210 /* lottieExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CFAA525FA64E300CCC210 /* lottieExamTests.swift */; };
 		461CFAB125FA64E400CCC210 /* lottieExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CFAB025FA64E400CCC210 /* lottieExamUITests.swift */; };
+		E0575463C044D0DBB911855F /* Pods_lottieExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		098BDC897E5FD6B78597906E /* Pods-lottieExam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieExam.release.xcconfig"; path = "Target Support Files/Pods-lottieExam/Pods-lottieExam.release.xcconfig"; sourceTree = "<group>"; };
 		461CFA8B25FA64E300CCC210 /* lottieExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lottieExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		461CFA8E25FA64E300CCC210 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		461CFA9025FA64E300CCC210 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		461CFAAC25FA64E400CCC210 /* lottieExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lottieExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		461CFAB025FA64E400CCC210 /* lottieExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieExamUITests.swift; sourceTree = "<group>"; };
 		461CFAB225FA64E400CCC210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DB2F0065B4FDAAE11A385E7 /* Pods-lottieExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieExam.debug.xcconfig"; path = "Target Support Files/Pods-lottieExam/Pods-lottieExam.debug.xcconfig"; sourceTree = "<group>"; };
+		D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lottieExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0575463C044D0DBB911855F /* Pods_lottieExam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				461CFAA425FA64E300CCC210 /* lottieExamTests */,
 				461CFAAF25FA64E400CCC210 /* lottieExamUITests */,
 				461CFA8C25FA64E300CCC210 /* Products */,
+				A5B869784A10890D936AD003 /* Pods */,
+				C35B31F6A1ECAF5C06A81A52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,24 @@
 			path = lottieExamUITests;
 			sourceTree = "<group>";
 		};
+		A5B869784A10890D936AD003 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DB2F0065B4FDAAE11A385E7 /* Pods-lottieExam.debug.xcconfig */,
+				098BDC897E5FD6B78597906E /* Pods-lottieExam.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C35B31F6A1ECAF5C06A81A52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 461CFAB525FA64E400CCC210 /* Build configuration list for PBXNativeTarget "lottieExam" */;
 			buildPhases = (
+				C7A9E5B5B7E7326BA5F73953 /* [CP] Check Pods Manifest.lock */,
 				461CFA8725FA64E300CCC210 /* Sources */,
 				461CFA8825FA64E300CCC210 /* Frameworks */,
 				461CFA8925FA64E300CCC210 /* Resources */,
+				5709BCE7EDA3D856C364FD4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5709BCE7EDA3D856C364FD4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lottieExam/Pods-lottieExam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lottieExam/Pods-lottieExam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lottieExam/Pods-lottieExam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A9E5B5B7E7326BA5F73953 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lottieExam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		461CFA8725FA64E300CCC210 /* Sources */ = {
@@ -433,6 +502,7 @@
 		};
 		461CFAB625FA64E400CCC210 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DB2F0065B4FDAAE11A385E7 /* Pods-lottieExam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +522,7 @@
 		};
 		461CFAB725FA64E400CCC210 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098BDC897E5FD6B78597906E /* Pods-lottieExam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
