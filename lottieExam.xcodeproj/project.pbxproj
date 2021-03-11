@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		461CFA9B25FA64E300CCC210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461CFA9925FA64E300CCC210 /* LaunchScreen.storyboard */; };
 		461CFAA625FA64E300CCC210 /* lottieExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CFAA525FA64E300CCC210 /* lottieExamTests.swift */; };
 		461CFAB125FA64E400CCC210 /* lottieExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CFAB025FA64E400CCC210 /* lottieExamUITests.swift */; };
+		46A3273E25FA6FA500230A8E /* TwitterHeartButton.json in Resources */ = {isa = PBXBuildFile; fileRef = 46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */; };
 		E0575463C044D0DBB911855F /* Pods_lottieExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		461CFAAC25FA64E400CCC210 /* lottieExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lottieExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		461CFAB025FA64E400CCC210 /* lottieExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieExamUITests.swift; sourceTree = "<group>"; };
 		461CFAB225FA64E400CCC210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeartButton.json; sourceTree = "<group>"; };
 		5DB2F0065B4FDAAE11A385E7 /* Pods-lottieExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieExam.debug.xcconfig"; path = "Target Support Files/Pods-lottieExam/Pods-lottieExam.debug.xcconfig"; sourceTree = "<group>"; };
 		D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lottieExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 		461CFA8D25FA64E300CCC210 /* lottieExam */ = {
 			isa = PBXGroup;
 			children = (
+				46A3273925FA6EE600230A8E /* Animation */,
 				461CFA8E25FA64E300CCC210 /* AppDelegate.swift */,
 				461CFA9025FA64E300CCC210 /* SceneDelegate.swift */,
 				461CFA9225FA64E300CCC210 /* ViewController.swift */,
@@ -135,13 +138,20 @@
 			path = lottieExamUITests;
 			sourceTree = "<group>";
 		};
+		46A3273925FA6EE600230A8E /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		A5B869784A10890D936AD003 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				5DB2F0065B4FDAAE11A385E7 /* Pods-lottieExam.debug.xcconfig */,
 				098BDC897E5FD6B78597906E /* Pods-lottieExam.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -260,6 +270,7 @@
 			files = (
 				461CFA9B25FA64E300CCC210 /* LaunchScreen.storyboard in Resources */,
 				461CFA9825FA64E300CCC210 /* Assets.xcassets in Resources */,
+				46A3273E25FA6FA500230A8E /* TwitterHeartButton.json in Resources */,
 				461CFA9625FA64E300CCC210 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
