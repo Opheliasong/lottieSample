@@ -16,7 +16,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        let tabBar = UITabBarController.init()
+        
+        let graphVC = GraphViewController()
+        let timerVC = TimerViewController()
+        let graphTimerVC = GraphTimerViewController()
+        let twitterLikeVC = ViewController()
+        
+        
+        let graphTabItem = UITabBarItem.init(title: "Graph", image: UIImage(systemName: "rays"), tag: 0)
+        let timerTabItem = UITabBarItem.init(title: "Timer", image: UIImage(systemName: "timer"), tag: 1)
+        let graphTimerItem = UITabBarItem.init(title: "G-Timer", image: UIImage(systemName: "timer.square"), tag: 2)
+        let likeItem = UITabBarItem.init(title: "Like", image: UIImage(systemName: "heart.circle"), tag: 3)
+        graphVC.tabBarItem = graphTabItem
+        timerVC.tabBarItem = timerTabItem
+        graphTimerVC.tabBarItem = graphTimerItem
+        twitterLikeVC.tabBarItem = likeItem
+        
+        tabBar.setViewControllers([graphVC, timerVC, graphTimerVC, twitterLikeVC], animated: true)
+        self.window?.rootViewController = tabBar
+        self.window?.makeKeyAndVisible()
+        window?.windowScene = windowScene
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

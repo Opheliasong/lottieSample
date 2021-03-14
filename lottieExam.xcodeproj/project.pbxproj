@@ -15,6 +15,14 @@
 		461CFA9B25FA64E300CCC210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461CFA9925FA64E300CCC210 /* LaunchScreen.storyboard */; };
 		461CFAA625FA64E300CCC210 /* lottieExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CFAA525FA64E300CCC210 /* lottieExamTests.swift */; };
 		461CFAB125FA64E400CCC210 /* lottieExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461CFAB025FA64E400CCC210 /* lottieExamUITests.swift */; };
+		46209CC425FC45CE00BE9194 /* menu-open-and-close.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CC325FC45CE00BE9194 /* menu-open-and-close.json */; };
+		46209CD525FC473600BE9194 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CD425FC473500BE9194 /* GraphViewController.swift */; };
+		46209CDA25FC478800BE9194 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CD925FC478800BE9194 /* TimerViewController.swift */; };
+		46209CDF25FC479300BE9194 /* GraphTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CDE25FC479300BE9194 /* GraphTimerViewController.swift */; };
+		46209CE525FC537600BE9194 /* LottieTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CE425FC537600BE9194 /* LottieTabbarViewController.swift */; };
+		46209CEC25FC58E000BE9194 /* clock-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CE925FC58E000BE9194 /* clock-icon.json */; };
+		46209CED25FC58E000BE9194 /* graph-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CEA25FC58E000BE9194 /* graph-icon.json */; };
+		46209CEE25FC58E000BE9194 /* rocket-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CEB25FC58E000BE9194 /* rocket-icon.json */; };
 		46A3273E25FA6FA500230A8E /* TwitterHeartButton.json in Resources */ = {isa = PBXBuildFile; fileRef = 46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */; };
 		E0575463C044D0DBB911855F /* Pods_lottieExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +60,14 @@
 		461CFAAC25FA64E400CCC210 /* lottieExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lottieExamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		461CFAB025FA64E400CCC210 /* lottieExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lottieExamUITests.swift; sourceTree = "<group>"; };
 		461CFAB225FA64E400CCC210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46209CC325FC45CE00BE9194 /* menu-open-and-close.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "menu-open-and-close.json"; sourceTree = "<group>"; };
+		46209CD425FC473500BE9194 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		46209CD925FC478800BE9194 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		46209CDE25FC479300BE9194 /* GraphTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTimerViewController.swift; sourceTree = "<group>"; };
+		46209CE425FC537600BE9194 /* LottieTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTabbarViewController.swift; sourceTree = "<group>"; };
+		46209CE925FC58E000BE9194 /* clock-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "clock-icon.json"; sourceTree = "<group>"; };
+		46209CEA25FC58E000BE9194 /* graph-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "graph-icon.json"; sourceTree = "<group>"; };
+		46209CEB25FC58E000BE9194 /* rocket-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rocket-icon.json"; sourceTree = "<group>"; };
 		46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeartButton.json; sourceTree = "<group>"; };
 		5DB2F0065B4FDAAE11A385E7 /* Pods-lottieExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieExam.debug.xcconfig"; path = "Target Support Files/Pods-lottieExam/Pods-lottieExam.debug.xcconfig"; sourceTree = "<group>"; };
 		D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lottieExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +124,8 @@
 		461CFA8D25FA64E300CCC210 /* lottieExam */ = {
 			isa = PBXGroup;
 			children = (
+				46209CE325FC532E00BE9194 /* Navigator */,
+				46209CCD25FC470F00BE9194 /* SubViewController */,
 				46A3273925FA6EE600230A8E /* Animation */,
 				461CFA8E25FA64E300CCC210 /* AppDelegate.swift */,
 				461CFA9025FA64E300CCC210 /* SceneDelegate.swift */,
@@ -138,9 +156,31 @@
 			path = lottieExamUITests;
 			sourceTree = "<group>";
 		};
+		46209CCD25FC470F00BE9194 /* SubViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46209CD425FC473500BE9194 /* GraphViewController.swift */,
+				46209CD925FC478800BE9194 /* TimerViewController.swift */,
+				46209CDE25FC479300BE9194 /* GraphTimerViewController.swift */,
+			);
+			path = SubViewController;
+			sourceTree = "<group>";
+		};
+		46209CE325FC532E00BE9194 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				46209CE425FC537600BE9194 /* LottieTabbarViewController.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
 		46A3273925FA6EE600230A8E /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				46209CE925FC58E000BE9194 /* clock-icon.json */,
+				46209CEA25FC58E000BE9194 /* graph-icon.json */,
+				46209CEB25FC58E000BE9194 /* rocket-icon.json */,
+				46209CC325FC45CE00BE9194 /* menu-open-and-close.json */,
 				46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */,
 			);
 			path = Animation;
@@ -270,7 +310,11 @@
 			files = (
 				461CFA9B25FA64E300CCC210 /* LaunchScreen.storyboard in Resources */,
 				461CFA9825FA64E300CCC210 /* Assets.xcassets in Resources */,
+				46209CC425FC45CE00BE9194 /* menu-open-and-close.json in Resources */,
+				46209CEC25FC58E000BE9194 /* clock-icon.json in Resources */,
+				46209CED25FC58E000BE9194 /* graph-icon.json in Resources */,
 				46A3273E25FA6FA500230A8E /* TwitterHeartButton.json in Resources */,
+				46209CEE25FC58E000BE9194 /* rocket-icon.json in Resources */,
 				461CFA9625FA64E300CCC210 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,9 +382,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46209CDA25FC478800BE9194 /* TimerViewController.swift in Sources */,
+				46209CDF25FC479300BE9194 /* GraphTimerViewController.swift in Sources */,
 				461CFA9325FA64E300CCC210 /* ViewController.swift in Sources */,
+				46209CD525FC473600BE9194 /* GraphViewController.swift in Sources */,
 				461CFA8F25FA64E300CCC210 /* AppDelegate.swift in Sources */,
 				461CFA9125FA64E300CCC210 /* SceneDelegate.swift in Sources */,
+				46209CE525FC537600BE9194 /* LottieTabbarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

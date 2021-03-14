@@ -12,8 +12,7 @@ class ViewController: UIViewController {
     var isLike:Bool = false
     var twitterButton:AnimatedButton?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    fileprivate func makeTwitterLikeButton() {
         // Do any additional setup after loading the view.
         
         twitterButton = AnimatedButton()
@@ -26,6 +25,11 @@ class ViewController: UIViewController {
         view.addSubview(twitterButton!)
         twitterButton!.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 12).isActive = true
         twitterButton!.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        makeTwitterLikeButton()
     }
 
     @objc
