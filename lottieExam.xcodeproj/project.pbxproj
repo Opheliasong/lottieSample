@@ -24,6 +24,8 @@
 		46209CED25FC58E000BE9194 /* graph-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CEA25FC58E000BE9194 /* graph-icon.json */; };
 		46209CEE25FC58E000BE9194 /* rocket-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CEB25FC58E000BE9194 /* rocket-icon.json */; };
 		46A3273E25FA6FA500230A8E /* TwitterHeartButton.json in Resources */ = {isa = PBXBuildFile; fileRef = 46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */; };
+		46D219B525FF620A00537825 /* LottieTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D219B425FF620A00537825 /* LottieTabBar.swift */; };
+		46D219BA25FF623900537825 /* LottieTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D219B925FF623900537825 /* LottieTabBarItem.swift */; };
 		E0575463C044D0DBB911855F /* Pods_lottieExam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +71,8 @@
 		46209CEA25FC58E000BE9194 /* graph-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "graph-icon.json"; sourceTree = "<group>"; };
 		46209CEB25FC58E000BE9194 /* rocket-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rocket-icon.json"; sourceTree = "<group>"; };
 		46A3273D25FA6FA500230A8E /* TwitterHeartButton.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TwitterHeartButton.json; sourceTree = "<group>"; };
+		46D219B425FF620A00537825 /* LottieTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTabBar.swift; sourceTree = "<group>"; };
+		46D219B925FF623900537825 /* LottieTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTabBarItem.swift; sourceTree = "<group>"; };
 		5DB2F0065B4FDAAE11A385E7 /* Pods-lottieExam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lottieExam.debug.xcconfig"; path = "Target Support Files/Pods-lottieExam/Pods-lottieExam.debug.xcconfig"; sourceTree = "<group>"; };
 		D3D81507AED86517BA1416B2 /* Pods_lottieExam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lottieExam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				46209CE425FC537600BE9194 /* LottieTabbarViewController.swift */,
+				46D219B425FF620A00537825 /* LottieTabBar.swift */,
+				46D219B925FF623900537825 /* LottieTabBarItem.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -384,8 +390,10 @@
 			files = (
 				46209CDA25FC478800BE9194 /* TimerViewController.swift in Sources */,
 				46209CDF25FC479300BE9194 /* GraphTimerViewController.swift in Sources */,
+				46D219B525FF620A00537825 /* LottieTabBar.swift in Sources */,
 				461CFA9325FA64E300CCC210 /* ViewController.swift in Sources */,
 				46209CD525FC473600BE9194 /* GraphViewController.swift in Sources */,
+				46D219BA25FF623900537825 /* LottieTabBarItem.swift in Sources */,
 				461CFA8F25FA64E300CCC210 /* AppDelegate.swift in Sources */,
 				461CFA9125FA64E300CCC210 /* SceneDelegate.swift in Sources */,
 				46209CE525FC537600BE9194 /* LottieTabbarViewController.swift in Sources */,
