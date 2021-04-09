@@ -19,7 +19,7 @@
 		46209CD525FC473600BE9194 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CD425FC473500BE9194 /* GraphViewController.swift */; };
 		46209CDA25FC478800BE9194 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CD925FC478800BE9194 /* TimerViewController.swift */; };
 		46209CDF25FC479300BE9194 /* GraphTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CDE25FC479300BE9194 /* GraphTimerViewController.swift */; };
-		46209CE525FC537600BE9194 /* LottieTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CE425FC537600BE9194 /* LottieTabbarViewController.swift */; };
+		46209CE525FC537600BE9194 /* LottieTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46209CE425FC537600BE9194 /* LottieTabbarController.swift */; };
 		46209CEC25FC58E000BE9194 /* clock-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CE925FC58E000BE9194 /* clock-icon.json */; };
 		46209CED25FC58E000BE9194 /* graph-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CEA25FC58E000BE9194 /* graph-icon.json */; };
 		46209CEE25FC58E000BE9194 /* rocket-icon.json in Resources */ = {isa = PBXBuildFile; fileRef = 46209CEB25FC58E000BE9194 /* rocket-icon.json */; };
@@ -66,7 +66,7 @@
 		46209CD425FC473500BE9194 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		46209CD925FC478800BE9194 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		46209CDE25FC479300BE9194 /* GraphTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphTimerViewController.swift; sourceTree = "<group>"; };
-		46209CE425FC537600BE9194 /* LottieTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTabbarViewController.swift; sourceTree = "<group>"; };
+		46209CE425FC537600BE9194 /* LottieTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTabbarController.swift; sourceTree = "<group>"; };
 		46209CE925FC58E000BE9194 /* clock-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "clock-icon.json"; sourceTree = "<group>"; };
 		46209CEA25FC58E000BE9194 /* graph-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "graph-icon.json"; sourceTree = "<group>"; };
 		46209CEB25FC58E000BE9194 /* rocket-icon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rocket-icon.json"; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		46209CE325FC532E00BE9194 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				46209CE425FC537600BE9194 /* LottieTabbarViewController.swift */,
+				46209CE425FC537600BE9194 /* LottieTabbarController.swift */,
 				46D219B425FF620A00537825 /* LottieTabBar.swift */,
 				46D219B925FF623900537825 /* LottieTabBarItem.swift */,
 			);
@@ -396,7 +396,7 @@
 				46D219BA25FF623900537825 /* LottieTabBarItem.swift in Sources */,
 				461CFA8F25FA64E300CCC210 /* AppDelegate.swift in Sources */,
 				461CFA9125FA64E300CCC210 /* SceneDelegate.swift in Sources */,
-				46209CE525FC537600BE9194 /* LottieTabbarViewController.swift in Sources */,
+				46209CE525FC537600BE9194 /* LottieTabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

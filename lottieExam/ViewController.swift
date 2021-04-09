@@ -11,6 +11,7 @@ import Lottie
 class ViewController: UIViewController {
     var isLike:Bool = false
     var twitterButton:AnimatedButton?
+    var animView:AnimationView?
 
     fileprivate func makeTwitterLikeButton() {
         // Do any additional setup after loading the view.
@@ -27,9 +28,22 @@ class ViewController: UIViewController {
         twitterButton!.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
     }
     
+    fileprivate func makeAnimationView() {
+        animView = AnimationView()
+        animView!.translatesAutoresizingMaskIntoConstraints = false
+        animView!.animation = Animation.named("clock-icon")
+        animView!.clipsToBounds = false
+        view.addSubview(animView!)
+        animView!.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        animView!.centerYAnchor.constraint(equalTo: view.bottomAnchor, constant: -(animView!.bounds.height+100)).isActive = true
+        animView!.loopMode = .autoReverse
+        animView!.play()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         makeTwitterLikeButton()
+        makeAnimationView()
     }
 
     @objc

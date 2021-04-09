@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -19,13 +20,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
 
+//        let tabBar = self.loadDefaultTabBar()
+        let tabBar = self.loadLottieTabBar()
+        self.window?.rootViewController = tabBar
+        self.window?.makeKeyAndVisible()
+        window?.windowScene = windowScene
+    }
+    
+    func loadDefaultTabBar() -> UITabBarController {
         let tabBar = UITabBarController.init()
-        
+        tabBar.tabBar.barStyle = .black
         let graphVC = GraphViewController()
         let timerVC = TimerViewController()
         let graphTimerVC = GraphTimerViewController()
         let twitterLikeVC = ViewController()
-        
         
         let graphTabItem = UITabBarItem.init(title: "Graph", image: UIImage(systemName: "rays"), tag: 0)
         let timerTabItem = UITabBarItem.init(title: "Timer", image: UIImage(systemName: "timer"), tag: 1)
@@ -37,9 +45,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         twitterLikeVC.tabBarItem = likeItem
         
         tabBar.setViewControllers([graphVC, timerVC, graphTimerVC, twitterLikeVC], animated: true)
-        self.window?.rootViewController = tabBar
-        self.window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
+        return tabBar
+    }
+    
+    func loadLottieTabBar()->UITabBarController {
+        let tabBar = LottieTabbarController.init(barStyle: .black)
+        
+        let graphTimerVC = GraphTimerViewController()
+        let twitterLikeVC = ViewController()
+        let timerVC = TimerViewController()
+        
+        let graphTimerItem = LottieTabBarItem.init(lottieAnimation: Animation.named("graph-icon")!)
+        
+        let timerTabItem = LottieTabBarItem.init(lottieAnimation: Animation.named("clock-icon")!)
+        
+        let likeItem = LottieTabBarItem.init(lottieAnimation: Animation.named("TwitterHeartButton")!)
+        
+        graphTimerVC.tabBarItem = graphTimerItem
+        timerVC.tabBarItem = timerTabItem
+        twitterLikeVC.tabBarItem = likeItem
+        
+        tabBar.setViewControllers([graphTimerVC,  timerVC, twitterLikeVC], animated: true)
+        return tabBar
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

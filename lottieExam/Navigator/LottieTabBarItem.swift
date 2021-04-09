@@ -9,11 +9,14 @@ import UIKit
 import Lottie
 
 class LottieTabBarItem: UITabBarItem {
-    let lottieAnimation:Animation
+    var lottieAnimation:Animation?
     internal init(lottieAnimation: Animation) {
         self.lottieAnimation = lottieAnimation
+        super.init()
     }
+    
     required init?(coder: NSCoder) {
-//        lottieAnimation = Animation.
+        self.lottieAnimation = nil
+        super.init(coder: coder)
     }
 }
